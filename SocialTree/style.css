@@ -2,10 +2,70 @@
     --body-bg-color: #FAF7FD;
     --purple: #BB99DD;
     --font: 'Poppins', sans-serif;
-  }
+}
+
 * {
     border: 0;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* ==== Config geral ==== */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* ==== Main ==== */
+body {
+    background: var(--body-bg-color);
+    color: var(--purple);
+    font-family: var(--font);
+    font-size: 16px;
+    text-align: center;
+
+    margin: 0 auto;
+    padding-block: 100px;
+}
+
+.img-user {
+    border-radius: 50%;
+    border: 2px solid #BB99DD;
+    
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 33px;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.links ul li {
+    border: 2px solid #BB99DD;
+    border-radius: 4px;
+    width: 320px;
+    height: 40px;
+}
+
+.links ul li  a {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    display: flex;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 29px;    
+    padding-top: 68px;
 }
