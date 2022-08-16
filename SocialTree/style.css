@@ -1,0 +1,11 @@
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+    --font: 'Poppins', sans-serif;
+  }
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
