@@ -1,0 +1,70 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="time()">
+   OnLoad - Execute a JavaScript immediately after a page has been loaded
+    <button>Inscreva-se</button>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <p id="text4"></p>
+    <p>--------------</p>
+    <p id="time"></p>
+
+    <script>
+      const date = new Date();
+      document.getElementById("text1").innerHTML = date.toLocaleDateString();
+      document.getElementById("text2").innerHTML = date.toLocaleTimeString();
+      document.getElementById("text3").innerHTML = date.toLocaleString();
+
+      function startTime() {
+        const date = new Date();
+        document.getElementById("text4").innerHTML = date.toLocaleTimeString();
+        setTimeout(startTime, 1000);
+      }
+      startTime();
+    </script>
+  </body>
+</html>
+
+  Anotações
+  setTimeOut
+  - Definir um delay para a execução de algo
+  ex: quero que um alert apareça ao usuário depois de 5segundos
+  - Só executa um aunica vez
+
+  setInterval
+  - executa uma ação de tanto em tanto tempo, e fica chamando até que a função clearInterval seja chamada.
+
+  RESUMO:
+  A SETINTERVAL EXECUTA A CADA INTERVALO DE TEMPO ENQUANTO 
+  SETTIMEOUT EXECUTA APÓS DETERMINADO TEMPO
+
+  let seg = 5;
+  function lais() {
+      document.getElementById("time2").innerHTML = seg;
+      if (seg > 0) {
+          seg = seg - 1;
+      }
+      setTimeout(lais, 1000);
+  }
+  lais();
+
+  let seg2 = 5;
+  setInterval(() => {
+      document.getElementById("time3").innerHTML = seg2;
+      seg2 = seg2 - 1;
+  }, 1000); NAO VAI PARAR, VAI FICAR EM LOOP
+ -->

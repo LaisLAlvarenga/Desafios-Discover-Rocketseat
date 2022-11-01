@@ -13,9 +13,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="countdown()">
-    <button>Inscreva-se</button>
-    <p id="time"></p>
+    <div class="content">
+      <h1>Ready to launch in...</h1>
 
+      <section class="data-time">
+        <div class="data">
+          <span>Dias</span>
+          <span>Horas</span>
+          <span>Minutos</span>
+          <span>Segundos</span>
+        </div>
+        <div class="time">
+          <span id="day"></span>
+          <span id="hour"></span>
+          <span id="minute"></span>
+          <span id="second"></span>
+        </div>
+      </section>
+
+      <div class="time"></div>
+
+      <p class="text">Inscreva-se para saber mais sobre o lançamento</p>
+
+      <button>Inscreva-se</button>
+    </div>
+    <img src="./assets/rocket.svg" alt="" />
     <script src="script.js"></script>
   </body>
 </html>
