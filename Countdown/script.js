@@ -1,5 +1,5 @@
 const clock = document.querySelector('.time');
-const timeFinish = new Date("Nov 10, 2022 00:00:00").getTime();
+const timeFinish = new Date("Jan 01, 2023 00:00:00").getTime();
 
 function countdown() {
   const timeNow = new Date().getTime();

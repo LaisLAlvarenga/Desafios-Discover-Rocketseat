@@ -15,45 +15,28 @@
 
 body {
     font-family: var(--font-family);
-    /* padding: 150px 50px; */
+    padding: 50px 50px;
+    
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.content {
-    padding: 150px 50px;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 h1 {
     color: var(--purple);
+    padding-bottom: 19px;
+
     font-size: 36;
     font-weight: 700;
     letter-spacing: 0.105em;
+
     text-transform: uppercase;
-    padding-bottom: 19px;
-}
-
-button {
-    border-radius: 15px;
-    color: #fff;
-    background-color: var(--purple);
-
-    width: 160px;
-    height: 46px;
-
-    border: none;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.text {
-    font-size: 14px;
-    color: var(--text-color);
-    padding-bottom: 31px;
-}
-
-.time {
-    font-size: 62px;
-    color: var(--black);
-    padding-bottom: 26px;
 }
 
 .data {
@@ -66,6 +49,33 @@ button {
     font-size: 14px;
 }
 
-img {
-    margin-right: 60px;
+.countdown {
+    font-size: 62px;
+    color: var(--black);
+}
+
+p {
+    font-size: 14px;
+    color: var(--text-color);
+
+    padding-bottom: 31px;
+    padding-top: 30px;
+}
+
+button {
+    background-color: var(--purple);
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 400;
+    
+    width: 160px;
+    height: 46px;
+    
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    filter: brightness(80%);
 }

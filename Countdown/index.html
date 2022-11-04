@@ -13,31 +13,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="countdown()">
-    <div class="content">
+    <p id="text1"></p>
+    <main>
       <h1>Ready to launch in...</h1>
 
-      <section class="data-time">
+      <div class="data-time">
         <div class="data">
           <span>Dias</span>
           <span>Horas</span>
           <span>Minutos</span>
           <span>Segundos</span>
         </div>
-        <div class="time">
+
+        <div class="countdown">
           <span id="day"></span>
           <span id="hour"></span>
           <span id="minute"></span>
           <span id="second"></span>
         </div>
-      </section>
+      </div>
 
-      <div class="time"></div>
-
-      <p class="text">Inscreva-se para saber mais sobre o lançamento</p>
+      <p>Inscreva-se para saber mais sobre o lançamento</p>
 
       <button>Inscreva-se</button>
-    </div>
-    <img src="./assets/rocket.svg" alt="" />
+    </main>
+
+    <img src="./assets/rocket.svg" alt="Um foguete no espaço." />
     <script src="script.js"></script>
   </body>
 </html>
